@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/welcomebg"
+    tools:context=".WelcomePg">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/yeseva_one"
+        android:text="Welcome!"
+        android:textColor="#033A3B"
+        android:textSize="68dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.21"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.158" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/login_btn"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:background="@drawable/rounded_corners_green"
+        android:backgroundTint="#033A3B"
+        android:text="Log In"
+        android:onClick="onclick_login"
+        android:textColor="#D9F4F6"
+        android:textAllCaps="false"
+        android:fontFamily="@font/playfair_display_black"
+        android:textSize="42dp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/signup_btn"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:background="@drawable/rounded_corners_green"
+        android:backgroundTint="#033A3B"
+        android:onClick="onclick_signup"
+        android:text="Sign Up"
+        android:textColor="#D9F4F6"
+        android:textAllCaps="false"
+        android:fontFamily="@font/playfair_display_black"
+        android:textSize="42dp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.683" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

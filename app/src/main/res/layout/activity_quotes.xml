@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer_layout"
+    android:background="#FAF0E8"
+    tools:context=".Quotes">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/backarrow"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:onClick="btn_back"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/main_toolbar"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Quotes"
+            android:fontFamily="@font/playfair_display"
+            android:textColor="#522749"
+            android:textSize="33dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="-53dp"
+            android:textStyle="bold"
+            />
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="68dp"
+            android:layout_marginTop="-15dp"
+            android:src="@drawable/line_dark" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Categories"
+            android:textColor="#522749"
+            android:fontFamily="@font/lora"
+            android:textStyle="bold"
+            android:textSize="22dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="-10dp"
+            />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/perseverance_btn"
+                    android:layout_width="375dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:stateListAnimator="@null"
+                    android:onClick="pers_btn"
+                    android:background="@drawable/rounded_corners_green"
+                    android:backgroundTint="#B8D7D5"
+                    android:drawableRight="@drawable/perseverance"
+                    android:paddingRight="20dp"
+                    android:text="Perseverance"
+                    android:textAllCaps="false"
+                    android:fontFamily="serif"
+                    android:textSize="25sp"
+                    android:textColor="#011416"
+                    android:gravity="center|left"
+                    android:paddingLeft="20dp"
+                    />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="375dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="15dp"
+                    android:stateListAnimator="@null"
+                    android:background="@drawable/rounded_corners_green"
+                    android:backgroundTint="#79B4B1"
+                    android:drawableRight="@drawable/positivethinking"
+                    android:paddingRight="15dp"
+                    android:text="Positive Thinking"
+                    android:textAllCaps="false"
+                    android:fontFamily="serif"
+                    android:textSize="25sp"
+                    android:textColor="#011416"
+                    android:gravity="center|left"
+                    android:paddingLeft="20dp"
+                    />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="375dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="15dp"
+                    android:stateListAnimator="@null"
+                    android:background="@drawable/rounded_corners_green"
+                    android:backgroundTint="#B8D7D5"
+                    android:drawableRight="@drawable/success"
+                    android:paddingRight="20dp"
+                    android:text="Success"
+                    android:textAllCaps="false"
+                    android:fontFamily="serif"
+                    android:textSize="25sp"
+                    android:textColor="#011416"
+                    android:gravity="center|left"
+                    android:paddingLeft="20dp"
+                    />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="375dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="15dp"
+                    android:stateListAnimator="@null"
+                    android:background="@drawable/rounded_corners_green"
+                    android:backgroundTint="#79B4B1"
+                    android:drawableRight="@drawable/anxiety"
+                    android:paddingRight="20dp"
+                    android:text="Anxiety"
+                    android:textAllCaps="false"
+                    android:fontFamily="serif"
+                    android:textSize="25sp"
+                    android:textColor="#011416"
+                    android:gravity="center|left"
+                    android:paddingLeft="20dp"
+                    />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="375dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="15dp"
+                    android:stateListAnimator="@null"
+                    android:background="@drawable/rounded_corners_green"
+                    android:backgroundTint="#B8D7D5"
+                    android:drawableRight="@drawable/stress"
+                    android:paddingRight="20dp"
+                    android:text="Stress"
+                    android:textAllCaps="false"
+                    android:fontFamily="serif"
+                    android:textSize="25sp"
+                    android:textColor="#011416"
+                    android:gravity="center|left"
+                    android:paddingLeft="20dp"
+                    />
+
+            </LinearLayout>
+        </ScrollView>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        >
+
+        <include
+            layout="@layout/main_nav_drawer"/>
+    </RelativeLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>

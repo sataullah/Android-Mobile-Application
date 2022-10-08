@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer_layout"
+    android:background="#FAF0E8"
+    tools:context=".navigation_drawer">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/main_toolbar"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Home"
+            android:fontFamily="@font/playfair_display"
+            android:textColor="#522749"
+            android:textSize="33dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="-53dp"
+            android:textStyle="bold"
+            />
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="68dp"
+            android:layout_marginTop="-18dp"
+            android:src="@drawable/line_dark" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70dp"
+                android:background="@null"
+                android:ems="10"
+                android:fontFamily="@font/lora"
+                android:text="Hello"
+                android:textColor="#202C41"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="370dp"
+                android:layout_height="170dp"
+                android:background="@drawable/rounded_corners_green"
+                android:backgroundTint="#98C6C3"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="13dp"
+                android:text="Cultivate \nself-compassion \nand reduce fear \nand anxiety!"
+                android:paddingLeft="23dp"
+                android:paddingTop="23dp"
+                android:fontFamily="serif"
+                android:textStyle="bold"
+                android:textColor="#522749"
+                android:textSize="23dp"
+                />
+        </LinearLayout>
+
+            <ImageView
+                android:layout_width="135dp"
+                android:layout_height="140dp"
+                android:src="@drawable/home_floral"
+                android:layout_marginLeft="246dp"
+                android:layout_marginTop="-160dp"/>
+
+        <TextView
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:text="“Positive thinking will \nlet you do everything better than negative thinking will.”"
+            android:layout_marginLeft="170dp"
+            android:layout_marginTop="40dp"
+            android:fontFamily="serif"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:textColor="#522749"
+            />
+
+        <ImageView
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="-110dp"
+            android:src="@drawable/homepg_picture" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Popular"
+            android:textColor="#522749"
+            android:textSize="13pt"
+            android:fontFamily="@font/eczar_semibold"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="27dp"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/next_icon"
+            android:layout_marginTop="-33dp"
+            android:layout_marginStart="400dp"/>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="220dp"
+                    android:layout_height="170dp"
+                    android:layout_marginLeft="19dp"
+                    android:layout_marginTop="14dp"
+                    android:stateListAnimator="@null"
+                    android:onClick="onclick_qudecision"
+                    android:background="@drawable/rounded_corners_green"
+                    android:backgroundTint="#98C6C3"
+                    android:drawableEnd="@drawable/quickdecision"
+                    android:paddingRight="15dp"
+                    android:text="Quick Decision"
+                    android:textAllCaps="false"
+                    android:fontFamily="serif"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:textColor="#011416"
+                    />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="220dp"
+                    android:layout_height="170dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="12dp"
+                    android:stateListAnimator="@null"
+                    android:onClick="onclick_mquiz"
+                    android:background="@drawable/rounded_corners_green"
+                    android:backgroundTint="#79B4B1"
+                    android:drawableEnd="@drawable/moodquiz"
+                    android:fontFamily="serif"
+                    android:paddingRight="15dp"
+                    android:text="Mood \nQuiz"
+                    android:textAllCaps="false"
+                    android:textColor="#011416"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_height="170dp"
+                    android:layout_width="220dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="19dp"
+                    android:stateListAnimator="@null"
+                    android:onClick="onclick_cmusic"
+                    android:background="@drawable/rounded_corners_green"
+                    android:backgroundTint="#98C6C3"
+                    android:drawableEnd="@drawable/calmmusic"
+                    android:fontFamily="serif"
+                    android:paddingRight="15dp"
+                    android:text="Calm Music"
+                    android:textAllCaps="false"
+                    android:textColor="#011416"
+                    android:textSize="22dp"
+                    android:textStyle="bold"
+                    />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_height="170dp"
+                    android:layout_width="220dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:stateListAnimator="@null"
+                    android:onClick="onclick_angrame"
+                    android:background="@drawable/rounded_corners_green"
+                    android:backgroundTint="#79B4B1"
+                    android:drawableEnd="@drawable/anagram_gameicon"
+                    android:fontFamily="serif"
+                    android:paddingRight="15dp"
+                    android:text="Anagram Game"
+                    android:textAllCaps="false"
+                    android:textColor="#011416"
+                    android:textSize="21dp"
+                    android:textStyle="bold"
+                    />
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start">
+
+        <include
+            layout="@layout/main_nav_drawer"/>
+
+    </RelativeLayout>
+
+
+
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

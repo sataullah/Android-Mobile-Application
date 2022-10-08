@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAE1C4"
+    android:onClick="ClickToExit"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:onClick="ClickHome">
+
+        <ImageView
+            android:layout_width="39dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="30dp"
+            android:src="@drawable/home_icon" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_marginStart="0dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/lora"
+            android:padding="15dp"
+            android:text="Home"
+            android:textColor="#522749"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:onClick="ClickAboutUs">
+
+        <ImageView
+            android:layout_width="37dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="30dp"
+            android:src="@drawable/aboutus_icon" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="57dp"
+            android:layout_marginStart="0dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/lora"
+            android:padding="15dp"
+            android:text="About Us"
+            android:textColor="#522749"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:onClick="ClickMoodQuiz">
+
+        <ImageView
+            android:layout_width="37dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="30dp"
+            android:src="@drawable/moodquiz_icon" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="58dp"
+            android:layout_marginStart="0dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/lora"
+            android:padding="15dp"
+            android:text="Mood Quiz"
+            android:textColor="#522749"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:onClick="ClickProgress">
+
+        <ImageView
+            android:layout_width="37dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="30dp"
+            android:src="@drawable/progress_icon" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="57dp"
+            android:layout_marginStart="0dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/lora"
+            android:padding="15dp"
+            android:text="Progress"
+            android:textColor="#522749"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:onClick="ClickQuotes">
+
+        <ImageView
+            android:layout_width="37dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="30dp"
+            android:src="@drawable/quotes_icon" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_marginStart="0dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/lora"
+            android:padding="15dp"
+            android:text="Quotes"
+            android:textColor="#522749"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:onClick="ClickGame">
+
+        <ImageView
+            android:layout_width="37dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="30dp"
+            android:src="@drawable/anagramgame_icon" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="58dp"
+            android:layout_marginStart="0dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/lora"
+            android:padding="15dp"
+            android:text="Anagram Game"
+            android:textColor="#522749"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:onClick="ClickMusic">
+
+        <ImageView
+            android:layout_width="37dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="30dp"
+            android:src="@drawable/calmmusic_icon" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_marginStart="0dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/lora"
+            android:padding="15dp"
+            android:text="Calm Music"
+            android:textColor="#522749"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:onClick="ClickDecision">
+
+        <ImageView
+            android:layout_width="37dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="30dp"
+            android:src="@drawable/quickdecision_icon" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="57dp"
+            android:layout_marginStart="0dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/lora"
+            android:padding="15dp"
+            android:text="Quick Decision"
+            android:textColor="#522749"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:onClick="ClickNotification">
+
+        <ImageView
+            android:layout_width="37dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="30dp"
+            android:src="@drawable/notification_icon" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_marginStart="0dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/lora"
+            android:padding="15dp"
+            android:text="Notifications"
+            android:textColor="#522749"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:onClick="ClickLogout"
+        android:paddingTop="180dp">
+
+        <ImageView
+            android:layout_width="37dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="30dp"
+            android:src="@drawable/logout_icon" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="58dp"
+            android:layout_marginStart="0dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/lora"
+            android:padding="15dp"
+            android:text="Logout"
+            android:textColor="#522749"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

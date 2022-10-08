@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "491665076359",
+    "firebase_url": "https://tranquillo-fe439-default-rtdb.firebaseio.com",
+    "project_id": "tranquillo-fe439",
+    "storage_bucket": "tranquillo-fe439.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:491665076359:android:ccacabd23c2e543fe90822",
+        "android_client_info": {
+          "package_name": "com.example.tranquillo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "491665076359-8brhrl8b4sbqcl3b3880mn1ii5mfq0ho.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhWB-qq8hGZ9JWOMk9cugQ_OsrA_1f4H0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "491665076359-8brhrl8b4sbqcl3b3880mn1ii5mfq0ho.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
